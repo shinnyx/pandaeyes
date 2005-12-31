@@ -112,9 +112,9 @@ Suggestion List
 					<div class="slide">
 						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_01.png" />
 					</div>
-					<div class="slide">
+<!-- 					<div class="slide">
 						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_02.png" />
-					</div>
+					</div> -->
 				</div>
 				<a href="#" id="ui-carousel-next"></a>
 				<div id="pages" class="centerlized" style="height:20px;"></div>
@@ -260,8 +260,6 @@ Suggestion List
             <ul id="social">
                 <li id="facebook"><a href="http://www.facebook.com/pandaeyes.net">Facebook</a></li>
                 <li id="twitter"><a href="https://twitter.com/Pandaeyesnet">Twitter</a></li>
-                <li id="google"><a href="">Google +</a></li>
-                <li id="email"><a href="">Email</a></li>
                 <li id="google"><a href="https://plus.google.com/108072811459106774048">Google +</a></li>
                 <li id="email"><a href="mailto:us@pandaeyes.net">Email Us</a></li>
             </ul>
@@ -388,6 +386,13 @@ $('a[href*=#]:not([href=#])').click(function() {
 					$( this ).css( "opacity", 1.0 );
 				}
 			);
+	});
+</script>
+<script type="text/JavaScript">
+	$(document).ready(function(){
+		$("#submit").click(function(){
+			validateForm();
+		});
 	});
 </script>
 </body>

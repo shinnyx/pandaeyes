@@ -27,6 +27,10 @@ input,textarea{
 {
 	float:right;
 }
+input:after{
+	background-image:url('img/error.png');
+	margin:10px auto;
+}
 textarea
 {
 	display:block;
@@ -34,7 +38,7 @@ textarea
 	height:150px;
 	margin:auto;
 }
-input:focus
+input:before
 {
 	outline:none;
 }
