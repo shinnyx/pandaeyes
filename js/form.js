@@ -7,26 +7,26 @@ function validateForm()
 	var emailToVal = $("#email").val();
 	if(emailToVal == '')
 	{
-		$("#email").before('<img src="img/error.png"/>');
+		$("#email").before('<img src="img/error.png" class="error"/>');
 		hasError = true;
 	}
 	else if(!emailReg.test(emailToVal))
 	{
-		$("#email").before('<img src="img/error.png"/>');
+		$("#email").before('<img src="img/error.png" class="error"/>');
 		hasError = true;
 	}
 
 	var name = $("#name").val();
 	if(name == "")
 	{
-		$("#name").before('<img src="img/error.png"/>');
+		$("#name").before('<img src="img/error.png" class="error"/>');
 		hasError = true;
 	}
 
 	var message = $("#message").val();
 	if(message == "")
 	{
-		$("#message").before('<img src="img/error.png"/>');
+		$("#message").before('<img src="img/error.png" class="error"/>');
 		hasError = true;
 	}
 

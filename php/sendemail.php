@@ -19,4 +19,6 @@ $body = $_POST['message'];
      'password' => $password));
  
  $mail = $smtp->send($to, $headers, $body);
+
+ echo'success';
 ?>
