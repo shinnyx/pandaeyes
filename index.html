@@ -1,0 +1,332 @@
+﻿<!doctype html>
+
+<!-- 
+320 and Up by Andy Clarke
+Version: 3.0
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<!--
+Suggestion List
+-----------
+1. Use negative margin instead of display:none on slider
+1. Custom scrollbar
+-->
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>Pandaeyes™ = →</title>
+
+<link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_18e89899766a_16.png">
+
+<meta name="description" content="We believe in marrying fun and function to create engaging and informative web experiences.">
+<meta name="author" content="pandaeyes.net">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link type="text/css" rel="stylesheet" href="css/320andup.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/modernizr-2.5.3-min.js"></script>
+<!-- For iPhone 4 -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"> -->
+<!-- For iPad 1-->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"> -->
+<!-- For the new iPad -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/h/apple-touch-icon-144x144-precomposed.png"> -->
+<!-- For iPhone 3G, iPod Touch and Android -->
+<!-- <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"> -->
+<!-- For Nokia -->
+<!-- <link rel="shortcut icon" href="img/l/apple-touch-icon.png"> -->
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS -->
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+<!-- <link rel="apple-touch-startup-image" href="img/splash.png"> -->
+
+<!-- <script>(function(){var p,l,r=window.devicePixelRatio;if(navigator.platform==="iPad"){p=r===2?"img/startup/startup-tablet-portrait-retina.png":"img/startup/startup-tablet-portrait.png";l=r===2?"img/startup/startup-tablet-landscape-retina.png":"img/startup/startup-tablet-landscape.png";document.write('<link rel="apple-touch-startup-image" href="'+l+'" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="'+p+'" media="screen and (orientation: portrait)"/>');}else{p=r===2?"img/startup/startup-retina.png":"img/startup/startup.png";document.write('<link rel="apple-touch-startup-image" href="'+p+'"/>');}})()</script> -->
+<!--Microsoft -->
+
+<!-- Prevents links from opening in mobile Safari -->
+<!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
+<meta http-equiv="cleartype" content="on">
+</head>
+
+<body class="clearfix">
+	<div class="content clearfix">
+		<section id="hello">
+			<header role="banner" class="clearfix centerlized">
+				<div id="slidingBarContent">
+					<h6 style="color:#FFF">>>>>>>>>>>>>  We can put some useful information here. For example, a newsfeed that scrolls sideways  >>>>>>>>>>>></h6>
+				</div>
+				<div class="reset" id="slidingBar">
+					<a href="#" class="pull-right"><span id="slidingArrow">&#x25BC;</span></a>
+				</div>
+			</header>
+			<!-- Logo -->
+			<img src="img/logo/logo_animate.gif" alt="logo" title="This is our logo. :D" height="78" width="128" style="padding-bottom:10px;"/>
+			<!-- Navigation -->
+			<div id="navigation">
+				<div class="nav_divider centerlized">
+					<span class="nav_gt"></span><span class="nav_bd"></span><span class="nav_lt"></span>
+				</div>
+				<nav class="centerlized">
+					<ul>
+						<li><a href="#"><span>&diams; </span>Hello</a></li>
+						<li><a href="#what_we_do"><span>&diams; </span>Our Story</a></li>
+						<li><a href="#who_we_are"><span>&diams; </span>Who We Are</a></li>
+						<li><a href="#our_work"><span>&diams; </span>Our Work</a></li>
+						<li><a href="http://blog.pandaeyes.net" target="_blank"><span>&diams; </span>Blog</a></li>
+						<li><a href="#contact_us"><span>&diams; </span>Contact Us &nbsp;&nbsp;&diams;</a></li>
+					</ul>
+				</nav>
+				<div class="nav_divider centerlized">
+				<span class="nav_gt"></span><span class="nav_bd"></span><span class="nav_lt"></span>
+			</div>
+			</div>
+			<!-- Carousel -->
+			<div id="carousel_slider" class="centerlized">
+				<a href="#" id="ui-carousel-prev"></a>
+
+				<div id="carousel">
+					<div class="slide">
+						<img alt="We build websites" title="We Build Websites." src="img/carousel/01.jpg" />
+					</div>
+					<div class="slide">
+						<img alt="We build websites" title="We Build Websites." src="img/carousel/02.jpg" />
+					</div>
+				</div>
+				<a href="#" id="ui-carousel-next"></a>
+				<div id="pages" class="centerlized" style="height:20px;"></div>
+			</div>
+		</section>
+		<section id="what_we_do">
+			<!-- story telling -->
+			<div class="title">This is what we do</div>
+		</section>
+		<section id="who_we_are">
+			<!-- Figures -->
+			<div class="title">Who are we you ask?</div>
+			<div class="figure_group centerlized">
+				<ul id="figures_1">
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">Kit Meng</span>
+						<p class="figure_text">
+							Bell pepper caulie coriander chickpea ricebean bush tomato pumpkin tomatillo azuki bean avocado welsh onion sierra lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
+						</p>
+					</li>
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">CS Chong</span>
+						<p class="figure_text">
+							Bell pepper caulie coriander chickpea ricebean bush tomato pumpkin tomatillo leone bologi artichoke okra radicchio lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
+						</p>
+					</li>
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">Steven King</span>
+						<p class="figure_text">
+							Bell pepper caulie coriander chickpea ricebean bush tomato pumpkin tomatillo azuki bean avocado welsh onion sierra leone bologi artichoke okra radicchio lettuce. Dandelion tomato water spinach 
+						</p>
+					</li>
+				</ul>
+				<ul class="seperator">
+					<li></li>
+				</ul>
+				<ul id="figures_2">
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">Shinn</span>
+						<p class="figure_text">
+							Bell pepper caulie coriander chickpea  azuki bean avocado welsh onion sierra leone bologi artichoke okra radicchio lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
+						</p>
+					</li>
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">Ting Feng</span>
+						<p class="figure_text">
+							Ricebean bush tomato pumpkin tomatillo azuki bean avocado welsh onion sierra leone bologi artichoke okra radicchio lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
+						</p>
+					</li>
+					<li>
+						<div class="figure_thumbnail"></div>
+						<span class="figure_caption">You</span>
+						<p class="figure_text">
+							Ricebean bush tomato pumpkin tomatillo azuki bean avocado welsh onion sierra leone bologi artichoke okra radicchio lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
+						</p>
+					</li>
+				</ul>
+				<br />
+			</div>
+		</section>
+		<section id="our_work">
+			<!-- portfolio -->
+			<div class="title">Our work</div>
+		</section>
+		<section id="contact_us">
+			<div class="title">Get in touch</div>
+			<!-- contact form -->
+		</section>
+	</div><!-- / content -->
+	<ul id="float_nav">
+	</ul>
+<!--FOOTER START-->
+	<div id="footer-border"></div>
+	<footer role="contentinfo">
+		<div class="centerlized clearfix">
+			<small class="copyright">Copyright &copy; Pandaeyes &rarr; (FUN)CTION.</small>
+			<a href="#hello">
+				<small class="pull-right"> <!-- font-size to be reduced to fit the size of copyright -->
+					Back to top <i class="icon-chevron-up circled-font"></i>
+				</small>
+			</a>
+		</div>
+	</footer>
+<!--FOOTER END-->
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+-->
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+<!-- floating menu -->
+<script>
+	$(function() {
+		$('section').each(function(index) {
+			$('#float_nav').append('<li><a href=#'+this.id+'>&euro;</a></li>');
+		});
+	});
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/helper.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.rcarousel.min.js"></script>
+<!-- Google Analytics
+<script>
+var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
+-->
+<!-- toggle text change -->
+<script>
+	$(function() {
+		var toggle = $('#slidingArrow');
+		toggle.mousedown(function() {
+			$(this).parent().parent().siblings("#slidingBarContent").slideToggle('1000', function() {
+				toggle.text($(this).is(':visible') ? "▲" : "▼");
+			});
+		});
+	});
+</script>
+<!-- animated scrolling -->
+<script>
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var $target = $(this.hash), target = this.hash;
+    	var targetOffset = $target.offset().top;
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: targetOffset
+            }, 1000, function() { location.hash = target; });
+            return false;
+        }
+    }
+});
+</script>
+<!-- carousel -->
+<script type="text/javascript">
+	jQuery(function($) {
+		function generatePages() {
+			var _total, i, _link;
+			_total = $( "#carousel" ).rcarousel( "getTotalPages" );
+			
+			for ( i = 0; i < _total; i++ ) {
+				_link = $( "<a href='#'></a>" );
+				
+				$(_link)
+					.bind("click", {page: i},
+						function( event ) {
+							$( "#carousel" ).rcarousel( "goToPage", event.data.page );
+							event.preventDefault();
+						}
+					)
+					.addClass( "bullet off" )
+					.appendTo( "#pages" );
+			}
+			
+			// mark first page as active
+			$( "a:eq(0)", "#pages" )
+				.removeClass( "off" )
+				.addClass( "on" )
+				.html('<div class="bullet"><div class="dot"></div></div>');
+		}
+
+		function pageLoaded( event, data ) {
+			$( "a.on", "#pages" )
+				.removeClass( "on" )
+				.html('<div class="bullet"></div>');
+
+			$( "a", "#pages" )
+				.eq( data.page )
+				.addClass( "on" )
+				.html('<div class="bullet"><div class="dot"></div></div>');
+				
+			$("#weBuild").addClass("bounceInRight");
+		}
+		
+		$("#carousel").rcarousel(
+			{
+				visible: 1,
+				step: 1,
+				speed: 700,
+				auto: {
+					enabled: false
+				},
+				width: 780,
+				height: 240,
+				start: generatePages,
+				pageLoaded: pageLoaded
+			}
+		);
+		
+		$( "#ui-carousel-next" )
+			.add( "#ui-carousel-prev" )
+			.add( ".bullet" )
+			.hover(
+				function() {
+					$( this ).css( "opacity", 0.7 );
+				},
+				function() {
+					$( this ).css( "opacity", 1.0 );
+				}
+			);
+	});
+</script>
+</body>
+</html>
