@@ -355,12 +355,13 @@ footer {
 #social li a{
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 #social li {
     float:left;
     margin:5px;
+    list-style: none;
 }
 
 #facebook a{
