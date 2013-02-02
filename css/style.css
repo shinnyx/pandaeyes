@@ -21,9 +21,16 @@
 }
 section:nth-child(even) {
 	background-color: #E25656; 
-	margin: 100px auto;
-	padding: 40px 0px 20px 0px;
 }
+
+section {
+	padding: 40px 0px 20px 0px;   
+}
+
+section:first-of-type {
+    padding-top:0px !important;
+}
+
 .centerlized {
 	width: 80%;
 	margin: auto;
@@ -90,7 +97,7 @@ nav ul li:hover a, nav ul li:hover + li span {
 	color: #FFF;
 }
 
-nav li span { padding-right: 20px; }
+nav li span { padding-right: 20px }
 
 nav ul li {
 	display: inline-block;
@@ -184,17 +191,47 @@ br { clear: left; }
 	font-family: 'Rockwell',Sans-Serif;
 	text-transform: uppercase;
 	width: 40%;
-	margin: auto auto 50px auto;
+	margin: auto auto 30px auto;
 }
+.subtitle {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Rockwell',Sans-Serif;
+	text-transform: uppercase;
+	width: 40%;
+	margin: auto auto 5px auto;
+}
+
 .figure_thumbnail {
 	float: left;
-	width: 173px;
-	height: 181px;
-	background: url('../img/us/head.png');
+	width: 158px;
+	height: 165px;
 	margin: auto 15px auto;
 	display: inline-block;
 	vertical-align: middle;
 }
+
+#kitmeng {
+	background: url('../img/ourstory/ourstory_kitmeng.png');    
+}
+
+#cschong {
+	background: url('../img/ourstory/ourstory_cs.png');    
+}
+
+#sking {
+	background: url('../img/ourstory/ourstory_stephen.png');    
+}
+
+#shinn {
+	background: url('../img/ourstory/ourstory_shinn.png');    
+}
+
+#tfeng {
+	background: url('../img/ourstory/ourstory_tf.png');    
+}
+
 .figure_caption {
 	text-align: left;
 	color: #fff;
@@ -205,8 +242,93 @@ br { clear: left; }
 	text-align: left;
 	width: 200px;
 	display: inline-block;
+    color: #164b4f; 
+    font-weight:bold;
+    padding-top: 5px;
 }
 /* END - we_are */
+
+/* BEGIN - what_we_do*/
+h1 {
+	background: #164b4f;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Rockwell',Sans-Serif;
+	text-transform: uppercase;
+	width: 40%;
+	margin: auto auto 50px auto;
+}
+
+h2 {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Rockwell',Sans-Serif;
+	text-transform: uppercase;
+	width: 40%;
+	margin: auto auto 50px auto;
+    font-size: 2rem !important;
+}
+
+.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px;}
+
+
+#skillset{
+    font-weight:bold;
+}
+#skillset {
+  width:996px;
+  margin: 0px auto;
+  color: #164b4f; 
+}
+
+#skillset li > p:first-of-type {
+    color:#fff;
+    font-weight:bold;
+    padding-top:25px;
+    font-size:16px;
+    margin-bottom:0px !important;
+}
+
+#skillset li {
+	margin: 1%;
+	padding: 0;
+	width: 27%;
+	float: left;
+	display: inline-block;
+    text-align:center;
+}
+
+
+span.seperator {
+	background: url('../img/divider_squiggly_v.png') repeat-y;
+	height: 320px;
+	width: 6px;
+	list-style: none;
+	float: left;
+	margin: 2.5%;
+	padding: 0;
+} 
+
+#skillset div {
+	width: 185px;
+	height: 185px;
+	margin: auto 15px 10px auto;
+	display: inline-block;
+	vertical-align: middle;    
+}
+
+.figure_work_branding {
+	background: url('../img/whatwedo/whatwedo_branding.png');
+}
+.figure_work_design {
+	background: url('../img/whatwedo/whatwedo_design.png');
+}
+.figure_work_coding {
+	background: url('../img/whatwedo/whatwedo_coding.png');
+}
+/* END - what_we_do*/
 
 /* BEGIN - footer */
 #footer-border {
@@ -216,13 +338,81 @@ br { clear: left; }
 }
 footer { 
 	background: #164b4f;
-	padding: 1em 0;
+	padding: 1em 0 0 0;
+    text-align:center;
 }
-footer small{
-	background: #113d40;
-	border-radius: 8px;
-	padding: 6px;
-	text-align: center;
+
+
+#social {
+    margin: 0px auto;
+    width:190px;
+    height:40px;
+    margin-bottom:5px;
 }
-.copyright { padding: 10px; }
+
+#social li a{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;    
+}
+
+#social li {
+    float:left;
+    margin:5px;
+}
+
+#facebook a{
+    background: url('../img/social/social_sprite.jpg') 0 0;
+    display:block;  
+    width:33px;
+    height:33px;
+}
+
+#twitter a{
+    background: url('../img/social/social_sprite.jpg') 0 33px;
+    display:block;  
+    width:33px;
+    height:33px;  
+}
+
+#google a{
+    background: url('../img/social/social_sprite.jpg') 0 66px;
+    display:block;  
+    width:33px;
+    height:33px;     
+}
+
+#email a{
+    background: url('../img/social/social_sprite.jpg') 0 99px;
+    display:block;  
+    width:33px;
+    height:33px;     
+}
+
+footer .title {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.copyright {
+    margin: 0px auto;
+    width:100%;
+    color:#fff;
+    background: #113d40;   
+    height: 35px;
+    padding: 1em 0 0 0;
+}
+
+.copyright span {
+    font-weight:bold;
+    font-size:11px;
+}
+
+.white_line {
+    height:2px;
+    width:400px;
+    display:inline-block;
+    margin:5px 10px 5px 10px;
+    background-color:#164b4f;
+}
 /* END - footer */
