@@ -319,14 +319,16 @@ span.seperator {
 	vertical-align: middle;    
 }
 
+.skillset_item { background: url('../img/whatwedo/whatwedo_sprite.png'); }
+
 .figure_work_branding {
-	background: url('../img/whatwedo/whatwedo_branding.png');
+	background-position: 0 0;
 }
 .figure_work_design {
-	background: url('../img/whatwedo/whatwedo_design.png');
+	background-position: 0 -185px;
 }
 .figure_work_coding {
-	background: url('../img/whatwedo/whatwedo_coding.png');
+	background-position: 0 -370px;
 }
 /* END - what_we_do*/
 
