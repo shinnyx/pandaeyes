@@ -1,0 +1,232 @@
+/*For Form styling*/
+/*START input */
+input,textarea{
+	width:-webkit-calc(50% - 5px);
+	width:-o-calc(50% - 5px);
+	width:-moz-calc(50% - 5px);
+	width:calc(50% - 5px);
+	min-width:40px;
+	height:50px;
+	font-family: 'Rockwell',Sans-Serif;
+	color: #fff;
+	border:none;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	-webkit-border-radius:7px;
+	text-align: center;
+	background-color: #164b4f;
+	display:inline;
+	margin-bottom:20px;
+}
+.float_left
+{
+	float:left;
+}
+.float_right
+{
+	float:right;
+}
+textarea
+{
+	display:block;
+	width:800px;
+	height:150px;
+	margin:50px auto;
+}
+input:focus
+{
+	outline:none;
+}
+.form_content
+{
+	display:block;
+	list-style: none;
+	width:800px;
+	margin:auto;
+}
+.form_label
+{
+	width:-webkit-calc(50% - 5px);
+	width:-o-calc(50% - 5px);
+	width:-moz-calc(50% - 5px);
+	width:calc(50% - 5px);
+	min-width:40px;
+	font-family: 'Rockwell',Sans-Serif;
+	color: #fff;
+	display:inline;
+	text-align:center;
+}
+/*START Add style to the section id "box"*/
+		#box
+		{
+			width:100%;
+			height:500px;
+			margin:30px auto;
+			background:#fff;
+			overflow:scroll;
+			font-weight:300;
+			border:1px solid rgba(0,0,0,.25);
+			box-shadow:0 2px 6px rgba(0,0,0,.2);
+			border-radius: 3px;
+			position:relative;
+			line-height: 130%;
+		} 
+			#box canvas{
+				position:absolute;
+				top:0;
+			}
+			#box div{
+				margin-top: 400px;
+				padding:20px;
+				background:#f0f0f0;
+				position:relative;
+			}
+				#box div h1{
+					padding:0;
+					margin:0;
+				}
+		/*START This portion is to set the default CSS value*/
+		#pelogo
+		{
+			background-color: #F15151;
+		}
+		.pe-logo,
+		.pe-logo *,
+		.pe-logo *:before,
+		.pe-logo *:after {
+			margin:0;
+			padding:0;
+			background:transparent;
+			border:0;
+			outline:0;
+			display:block;
+			font:normal normal 0/0 serif;
+		}
+		/*END*/
+		/*START PE-LOGO box*/
+		.pe-logo{
+			margin:110px auto;
+			background:rgb(201,44,25);
+			width:600px;
+			height:400px;
+			border-top:4px solid rgb(201,44,25);
+			border-bottom:4px solid rgb(201,44,25);
+			border-radius:10px;
+			-moz-border-radius:10px;/*for Mozilla Firefox*/
+			-webkit-border-radius:10px;/*for Safari & Chrome*/
+		}
+		/*END*/
+		/*START PE-BOX styling*/
+		.pe-logo .pe-box{
+			overflow: hidden;
+			float:left;
+			width:440px;
+			height:400px;
+			margin:0 0 0 80px;
+			background:white;
+			border-radius:5px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+		}
+		.pe-logo .pe-box:before{
+			position: relative;
+			content: '';
+			z-index: 1;
+			background:white;
+			float:left;
+			width:320px;
+			height:320px;
+			border:100px solid rgb(201,44,25);
+			margin:-310px 0 0 -40px;
+			-border-radius:10px;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			-moz-transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			-o-transform:rotate(45deg);
+		}
+		.pe-logo .pe-box:after{
+			content:'';
+			float:left;
+			width:360px;
+			height:360px;
+			border:2px solid rgb(201,44,25);
+			margin:10px 0 0 40px;
+			-o-transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			-moz-transform:rotate(45deg);
+		}
+		/*END*/
+		/*START PE-LOGO styling*/
+		.pe-logo:after {  
+    		content:'';  
+    		position:relative;  
+    		z-index:2;  
+    		content:'';  
+    		float:left;  
+    		margin-top:-404px;  
+    		width:600px;  
+    		height:408px;  
+    		display:block;  
+    		background:  
+        -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%,   
+        		/* rgba(255, 255, 255, 0.3) 30%, */  
+        		rgba(255, 255, 255, 0.1) 100%);  
+    		background:-o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%,   
+        		/* rgba(255, 255, 255, 0.2) 30%, */  
+        		rgba(255, 255, 255, 0.1) 100%);  
+    		background:-webkit-gradient(  
+        		linear, left top, left bottombottom, color-stop(0%,   
+        		rgba(255, 255, 255, 0.3)),   
+        		/* color-stop(30%, rgba(255, 255, 255, 0.2)), */  
+        		color-stop(100%, rgba(255, 255, 255, 0.1)));  
+    } 
+    /*END*/
+    /*START BUTTON STYLING */
+    a{
+    	position:relative;
+    	color:rgba(255,255,255,1);
+    	text-decoration : none;
+    	background-color:#154a4f;
+    	font-family:'Oxygen';
+    	font-weight:700;
+    	font-size:12pt;
+    	display:block;
+/*    	-webkit-border-radius:8px;
+    	-moz-border-radius:8px;
+    	-o-border-radius:8px;*/
+    	padding:4px;
+    	box-shadow:3px 4px rgba(0,0,0,0.3);
+    	-webkit-box-shadow: 3px 4px rgba(0,0,0,0.3);
+    	-moz-box-shadow:0px 9px 0px rgba(0,0,0,0.5), 0px 9pxrgba(0,0,0,0.5);
+    	-o-box-shadow:0px 9px 0px rgba(0,0,0,0.5), 0px 9px rgba(0,0,0,0.5);
+    	margin:100px auto;
+    	width:160px;
+    	text-align:center;
+    	-webkit-transition:all .1s ease;
+    	-o-transition:all .1s ease;
+    	-moz-transition:all .1s ease;
+    	transition:all .1s ease;
+    }
+    a:active
+    {
+    	-webkit-box-shadow:0px 0px 0px #154a4f;
+    	-moz-box-shadow:0px 0px 0px #154a4f;
+    	-o-box-shadow:0px 0px 0px #154a4f;
+    	box-shadow:0px 0px 0px #154a4f;
+    	position:relative;
+    	top:6px;
+    }
+    a:after{
+    	content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		right: -15px;
+		border-style: solid;
+		border-width: 15px 0 15px 15px;
+		border-color: transparent transparent transparent #ccc;
+		z-index: 10;
+    }
+/*END input*/

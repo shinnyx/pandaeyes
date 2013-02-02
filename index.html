@@ -39,6 +39,7 @@ Suggestion List
 <link type="text/css" rel="stylesheet" href="css/320andup.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
+<link type="text/css" rel="stylesheet" href="css/form_style.css"/>
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/selectivizr-min.js"></script>
 <![endif]-->
@@ -199,9 +200,43 @@ Suggestion List
                 </div>
             </div>
 		</section>
+		<section id="our_work">
+			<div class="title">Get in Touch</div>
+		</section>
 		<section id="contact_us">
-			<div class="title">Get in touch</div>
-			<!-- contact form -->
+			<div class="title">Get in Touch</div>
+			<div class="email_form centerlized">
+				<ul class="form_content">
+					<li>
+						<label class="form_label float_left">YOUR NAME*</label>
+						<label class="form_label float_right">EMAIL*</label>
+					</li>
+					<li>
+						<!--START contact form -->
+						<input type="text" id="name" name="name" class="float_left" autocomplete="off"/>
+						<input type="email" id="email" name="email" class="float_right" autocomplete="off"/>
+						<!--END contact form-->
+					</li>
+					<li>
+						<label class="form_label float_left">PHONE NUMBER</label>
+						<label class="form_label float_right">PROJECT TYPE*</label>
+					</li>
+					<li>
+						<!--START contact form -->
+						<input type="text" id="phone_no" name="phone_no" class="float_left" autocomplete="off"/>
+						<input type="text" id="project_type" name="project_type" class="float_right" autocomplete="off"/>
+						<!--END contact form-->
+					</li>
+					<li>
+						<label class="form_label">YOUR MESSAGE*</label>
+					</li>
+					<li class="form_row">
+						<!--START contact form -->
+						<textarea id="message_here" name="email"></textarea>
+						<!--END contact form-->
+					</li>
+				</ul>
+			</div>
 		</section>
 	</div><!-- / content -->
 	<div id="float_nav">
@@ -340,6 +375,15 @@ $('a[href*=#]:not([href=#])').click(function() {
 					$( this ).css( "opacity", 1.0 );
 				}
 			);
+	});
+</script>
+<script>
+	$(document).ready(function()
+	{
+		$("#submit").click(function())
+		{
+			return false;
+		}
 	});
 </script>
 </body>
