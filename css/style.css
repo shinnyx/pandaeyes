@@ -24,7 +24,7 @@ section:nth-child(even) {
 }
 
 section {
-	padding: 40px 0px 20px 0px;   
+	padding: 40px 0px 40px 0px;   
 }
 
 section:first-of-type {
@@ -116,7 +116,7 @@ nav ul li {
 #carousel_slider { width: 780px; position: relative; }
 #carousel {
 	display: inline-block;
-	background: #e25655;
+	background: #D84848;
 	margin-top: 20px;
 	border-radius: 22px;
 	width: 780;
@@ -145,7 +145,7 @@ nav ul li {
 	width: 10px;
 	height: 10px;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	overflow: hidden;
 }
 .dot {
@@ -271,7 +271,7 @@ h2 {
     font-size: 2rem !important;
 }
 
-.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px;}
+.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px; text-align:center;}
 
 
 #skillset{
@@ -312,23 +312,23 @@ span.seperator {
 } 
 
 #skillset div {
-	width: 185px;
-	height: 185px;
+	width: 195px;
+	height: 195px;
 	margin: auto 15px 10px auto;
 	display: inline-block;
 	vertical-align: middle;    
 }
 
-.skillset_item { background: url('../img/whatwedo/whatwedo_sprite.png'); }
+.skillset_item { background: url('../img/sprite_whatwedo.png'); }
 
 .figure_work_branding {
-	background-position: 0 0;
+	background-position: -1px 0;
 }
 .figure_work_design {
-	background-position: 0 -185px;
+	background-position: -1px -205px;
 }
 .figure_work_coding {
-	background-position: 0 -370px;
+	background-position: -1px -410px;
 }
 /* END - what_we_do*/
 
