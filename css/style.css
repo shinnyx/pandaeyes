@@ -347,9 +347,9 @@ footer {
 
 #social {
     margin: 0px auto;
-    width:190px;
-    height:40px;
-    margin-bottom:5px;
+    width:245px;
+    height:30px;
+    margin-bottom:70px;
 }
 
 #social li a{
@@ -365,31 +365,31 @@ footer {
 }
 
 #facebook a{
-    background: url('../img/social/social_sprite.jpg') 0 0;
+    background: url('../img/sprite_social.png') 0 0;
     display:block;  
-    width:33px;
-    height:33px;
+    width:45px;
+    height:45px;
 }
 
 #twitter a{
-    background: url('../img/social/social_sprite.jpg') 0 33px;
+    background: url('../img/sprite_social.png') 135px 0px;
     display:block;  
-    width:33px;
-    height:33px;  
+    width:45px;
+    height:45px;
 }
 
 #google a{
-    background: url('../img/social/social_sprite.jpg') 0 66px;
+    background: url('../img/sprite_social.png') 90px 0px;
     display:block;  
-    width:33px;
-    height:33px;     
+    width:45px;
+    height:45px;
 }
 
 #email a{
-    background: url('../img/social/social_sprite.jpg') 0 99px;
+    background: url('../img/sprite_social.png') 45px 0px;
     display:block;  
-    width:33px;
-    height:33px;     
+    width:45px;
+    height:45px;
 }
 
 footer .title {
