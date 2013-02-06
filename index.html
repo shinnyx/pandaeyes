@@ -201,10 +201,11 @@ Suggestion List
             </div>
 		</section>
 		<section id="our_work">
-			<div class="title">Get in Touch</div>
+			<div class="title">Our Work</div>
 		</section>
 		<section id="contact_us">
 			<div class="title">Get in Touch</div>
+			<p class="form_description">We love working with smart & fun people. If you think you're one, let's meet up!</p>
 			<div class="email_form centerlized">
 				<ul class="form_content">
 					<li>
@@ -228,13 +229,15 @@ Suggestion List
 						<!--END contact form-->
 					</li>
 					<li>
-						<label class="form_label">YOUR MESSAGE*</label>
+						<label class="form_label form_label_textarea">YOUR MESSAGE*</label>
 					</li>
-					<li class="form_row">
+					<li>
 						<!--START contact form -->
-						<textarea id="message_here" name="email"></textarea>
+						<textarea id="message" name="email"></textarea>
 						<!--END contact form-->
 					</li>
+					<li><p class="validation_message">All fields with a (*) are required.</p></li>
+					<li><a id="submit" href="javascript:void(0);">BOOM. SEND IT</li></a>
 				</ul>
 			</div>
 		</section>
@@ -271,6 +274,7 @@ Suggestion List
 <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
 <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
 <script type="text/javascript" src="js/jquery.ui.rcarousel.min.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
 <!-- Google Analytics
 <script>
 var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
@@ -377,13 +381,13 @@ $('a[href*=#]:not([href=#])').click(function() {
 			);
 	});
 </script>
-<script>
+<script type="text/javascript">
 	$(document).ready(function()
 	{
-		$("#submit").click(function())
+		$("#submit").click(function()
 		{
-			return false;
-		}
+			validateForm();
+		});
 	});
 </script>
 </body>
