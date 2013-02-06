@@ -62,7 +62,7 @@ section:first-of-type {
 /* BEGIN - header */
 #hello { 
 	text-align: center; 
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 #slidingBarContent { 
 	padding-top:5px;
@@ -90,6 +90,7 @@ nav ul li a, nav ul li{
 	color: #164b4f;
 	text-transform: uppercase;
 	cursor: pointer;
+    font-size:16px;
 }
 nav ul { margin: 2px; padding-left: 2px; }
 
@@ -113,14 +114,14 @@ nav ul li {
 /* END - nav */
 
 /* BEGIN - carousel */
-#carousel_slider { width: 780px; position: relative; }
+#carousel_slider { width: 960px; height:400px; position: relative; margin: 0 auto;}
 #carousel {
 	display: inline-block;
 	background: #D84848;
 	margin-top: 20px;
 	border-radius: 22px;
-	width: 780;
-	height: 240;
+	width: 960px;
+	height: 240px;
 	overflow: hidden;
 }
 #ui-carousel-next, #ui-carousel-prev {
@@ -129,6 +130,7 @@ nav ul li {
 	background: url(../img/pe_imgs.png) 0px 0px no-repeat;
 	display: inline-block;
 	position: absolute;
+    margin:40px auto;
 	top: 300px;
 	z-index: 1000;
 	opacity: 1;
@@ -138,23 +140,24 @@ nav ul li {
 	background-position: -50px 0px;
 	right: 0;
 }
-#pages a{ display: inline-block; }
+#pages a{ display: inline-block; margin:10px 5px; }
 .bullet {
 	border-radius: 50%;
-	background: #e25655;
+	background: #D84848;
 	width: 10px;
 	height: 10px;
-	padding: 0;
 	margin: 0 auto;
-	overflow: hidden;
+    overflow:hidden;
 }
 .dot {
 	border-radius: 50%;
 	background: #164b4f;
 	width: 10px;
 	height: 10px;
-	margin: 0 auto;
+	margin: 0 auto;  
 }
+
+.slider_img { margin:60px auto; }
 /* END - carousel */
 
 /* BEGIN - we_are */
