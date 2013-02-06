@@ -24,7 +24,7 @@ section:nth-child(even) {
 }
 
 section {
-	padding: 40px 0px 20px 0px;   
+	padding: 40px 0px 40px 0px;   
 }
 
 section:first-of-type {
@@ -51,18 +51,19 @@ section:first-of-type {
 /* BEGIN - float nav */
 #float_nav {
 	position: fixed;
-	border: 1px solid #000;
-	width: 28px;
-	height: 100px;
+    background-color:#164b4f;
+	width: 30px;
+	height: 200px;
 	right: 0;
-	top: 100px;
+	top: 40%;
+    margin:0 auto;
 }
 /* END - float nav */
 
 /* BEGIN - header */
 #hello { 
 	text-align: center; 
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 #slidingBarContent { 
 	padding-top:5px;
@@ -90,6 +91,7 @@ nav ul li a, nav ul li{
 	color: #164b4f;
 	text-transform: uppercase;
 	cursor: pointer;
+    font-size:16px;
 }
 nav ul { margin: 2px; padding-left: 2px; }
 
@@ -108,19 +110,19 @@ nav ul li {
 }
 .nav_divider > span { display: inline-block; }
 .nav_gt { background: url('../img/pe_imgs.png') -100px -50px; width: 23px; height:20px; }
-.nav_bd { background: url('../img/nav-bd.png'); width: 76%; height:20px; }
+.nav_bd { background: url('../img/nav-bd.png'); width: 980px; height:20px; }
 .nav_lt { background: url('../img/pe_imgs.png') -150px -50px; width: 23px; height:20px; }
 /* END - nav */
 
 /* BEGIN - carousel */
-#carousel_slider { width: 780px; position: relative; }
+#carousel_slider { width: 960px; height:400px; position: relative; margin: 0 auto;}
 #carousel {
 	display: inline-block;
-	background: #e25655;
+	background: #D84848;
 	margin-top: 20px;
 	border-radius: 22px;
-	width: 780;
-	height: 240;
+	width: 960px;
+	height: 240px;
 	overflow: hidden;
 }
 #ui-carousel-next, #ui-carousel-prev {
@@ -129,6 +131,7 @@ nav ul li {
 	background: url(../img/pe_imgs.png) 0px 0px no-repeat;
 	display: inline-block;
 	position: absolute;
+    margin:30px auto;
 	top: 300px;
 	z-index: 1000;
 	opacity: 1;
@@ -138,23 +141,24 @@ nav ul li {
 	background-position: -50px 0px;
 	right: 0;
 }
-#pages a{ display: inline-block; }
+#pages a{ display: inline-block; margin:10px 5px; }
 .bullet {
 	border-radius: 50%;
-	background: #e25655;
+	background: #D84848;
 	width: 10px;
 	height: 10px;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
+	margin: 0 auto;
+    overflow:hidden;
 }
 .dot {
 	border-radius: 50%;
 	background: #164b4f;
 	width: 10px;
 	height: 10px;
-	margin: 0 auto;
+	margin: 0 auto;  
 }
+
+.slider_img { margin:70px auto; }
 /* END - carousel */
 
 /* BEGIN - we_are */
@@ -184,7 +188,6 @@ ul.seperator li {
 } 
 br { clear: left; }
 .title {
-	background: #164b4f;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -193,6 +196,31 @@ br { clear: left; }
 	width: 40%;
 	margin: auto auto 30px auto;
 }
+			.ribbon {
+				display:inline-block;
+			}
+
+			.ribbon:after, .ribbon:before {
+				content: "";
+				float:left;
+				border:1em solid #164b4f;
+			}
+
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+
+			.ribbon span {
+				background:#164b4f;
+				line-height:2em;
+				padding:0;			
+                float:left;			    				
+                width:500px;
+			}
 .subtitle {
 	text-align: center;
 	color: #fff;
@@ -244,7 +272,8 @@ br { clear: left; }
 	display: inline-block;
     color: #164b4f; 
     font-weight:bold;
-    padding-top: 5px;
+    padding-top: 10px;
+    font-size:13px;
 }
 /* END - we_are */
 
@@ -271,7 +300,7 @@ h2 {
     font-size: 2rem !important;
 }
 
-.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px;}
+.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px; text-align:center;}
 
 
 #skillset{
@@ -312,21 +341,23 @@ span.seperator {
 } 
 
 #skillset div {
-	width: 185px;
-	height: 185px;
+	width: 195px;
+	height: 195px;
 	margin: auto 15px 10px auto;
 	display: inline-block;
 	vertical-align: middle;    
 }
 
+.skillset_item { background: url('../img/sprite_whatwedo.png'); }
+
 .figure_work_branding {
-	background: url('../img/whatwedo/whatwedo_branding.png');
+	background-position: -1px 0;
 }
 .figure_work_design {
-	background: url('../img/whatwedo/whatwedo_design.png');
+	background-position: -1px -205px;
 }
 .figure_work_coding {
-	background: url('../img/whatwedo/whatwedo_coding.png');
+	background-position: -1px -410px;
 }
 /* END - what_we_do*/
 
@@ -345,48 +376,49 @@ footer {
 
 #social {
     margin: 0px auto;
-    width:190px;
-    height:40px;
-    margin-bottom:5px;
+    width:245px;
+    height:30px;
+    margin-bottom:70px;
 }
 
 #social li a{
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 #social li {
     float:left;
     margin:5px;
+    list-style: none;
 }
 
 #facebook a{
-    background: url('../img/social/social_sprite.jpg') 0 0;
+    background: url('../img/sprite_social.png') 0 0;
     display:block;  
-    width:33px;
-    height:33px;
+    width:45px;
+    height:45px;
 }
 
 #twitter a{
-    background: url('../img/social/social_sprite.jpg') 0 33px;
+    background: url('../img/sprite_social.png') 135px 0px;
     display:block;  
-    width:33px;
-    height:33px;  
+    width:45px;
+    height:45px;
 }
 
 #google a{
-    background: url('../img/social/social_sprite.jpg') 0 66px;
+    background: url('../img/sprite_social.png') 90px 0px;
     display:block;  
-    width:33px;
-    height:33px;     
+    width:45px;
+    height:45px;
 }
 
 #email a{
-    background: url('../img/social/social_sprite.jpg') 0 99px;
+    background: url('../img/sprite_social.png') 45px 0px;
     display:block;  
-    width:33px;
-    height:33px;     
+    width:45px;
+    height:45px;
 }
 
 footer .title {

@@ -4,7 +4,7 @@
 320 and Up by Andy Clarke
 Version: 3.0
 URL: http://stuffandnonsense.co.uk/projects/320andup/
-Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0 test
 -->
 
 <!--
@@ -23,7 +23,7 @@ Suggestion List
 <head>
 <meta charset="utf-8">
 
-<title>Pandaeyes™ = →</title>
+<title>Pandaeyes</title>
 
 <link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_18e89899766a_16.png">
 
@@ -39,7 +39,6 @@ Suggestion List
 <link type="text/css" rel="stylesheet" href="css/320andup.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
-<link type="text/css" rel="stylesheet" href="css/form_style.css"/>
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/selectivizr-min.js"></script>
 <![endif]-->
@@ -76,17 +75,18 @@ Suggestion List
 	<div class="content clearfix">
 		<section id="hello">
 			<header role="banner" class="clearfix centerlized">
-				<div id="slidingBarContent">
-					<h6 style="color:#FFF">>>>>>>>>>>>>  We can put some useful information here. For example, a newsfeed that scrolls sideways  >>>>>>>>>>>></h6>
+                <div id="slidingBarContent">
+					<h6 style="color:#FFF">>>>>>>>>>>>>  Welcome to our brand spanking <i>new</i> site!   >>>>>>>>>>>></h6>
 				</div>
 				<div class="reset" id="slidingBar">
+                    <!--Temporary Fix-->
 					<a href="#" class="pull-right"><span id="slidingArrow">&#x25BC;</span></a>
 				</div>
 			</header>
 			<!-- Logo -->
 			<img src="img/logo/logo_animate.gif" alt="logo" title="This is our logo. :D" height="78" width="128" style="padding-bottom:10px;"/>
 			<!-- Navigation -->
-			<div id="navigation">
+			<div id="#float_nav">
 				<div class="nav_divider centerlized">
 					<span class="nav_gt"></span><span class="nav_bd"></span><span class="nav_lt"></span>
 				</div>
@@ -109,28 +109,34 @@ Suggestion List
 
 				<div id="carousel">
 					<div class="slide">
-						<img alt="We build websites" title="We Build Websites." src="img/carousel/01.jpg" />
+						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_01.png" />
 					</div>
 					<div class="slide">
-						<img alt="We build websites" title="We Build Websites." src="img/carousel/02.jpg" />
+						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_02.png" />
 					</div>
 				</div>
 				<a href="#" id="ui-carousel-next"></a>
 				<div id="pages" class="centerlized" style="height:20px;"></div>
 			</div>
 		</section>
+        
+<!-- OUR STORY START -->        
 		<section id="who_we_are">
 			<!-- Figures -->
-			<div class="title">Our story</div>
+			<div class="title"><div class="ribbon"><span>Our story</span></div></div>
             <div class="subtitle">&diams;&nbsp;&nbsp;Who we are&nbsp;&nbsp;&diams;</div>
 			<div class="figure_group centerlized">
+                
+            <p class="what_we_do_intro">
+                We're techies, artists and lucid dreamers; surfers, storytellers and cockroach lovers. Our constant briefs to play in order for things to work. Do we sound like people you'd like to meet?
+            </p>                
 				<ul id="figures_1">
 					<li>
 						<div class="figure_thumbnail" id="kitmeng"></div>
 						<span class="figure_caption">Kit Meng Designer</span>
 						<p class="figure_text">
 							Bell pepper caulie coriander chickpea ricebean bush tomato pumpkin tomatillo azuki bean avocado welsh onion sierra lettuce. Dandelion tomato water spinach courgette taro parsnip cauliflower.
-						</p>
+                        </p>
 					</li>
 					<li>
 						<div class="figure_thumbnail" id="cschong"></div>
@@ -170,9 +176,11 @@ Suggestion List
 				<br />
 			</div>
 		</section>
+<!-- OUR STORY ENDS -->          
+        
         <section id="what_we_do">
 			<!-- portfolio -->
-            <div class="title">What we do</div>
+            <div class="title"><div class="ribbon"><span>What we do</span></div></div>
             <div class="subtitle">&diams;&nbsp;&nbsp;Our Skillset&nbsp;&nbsp;&diams;</div>
             <div class="figure_group centerlized">
                 			
@@ -180,17 +188,16 @@ Suggestion List
                 We're techies, artists and lucid dreamers; surfers, storytellers and cockroach lovers. Our constant briefs to play in order for things to work. Do we sound like people you'd like to meet?
             </p>
                 <ul id="skillset">
-                    <li><div class="figure_work_branding"></div>
+                    <li><div class="figure_work_branding skillset_item"></div>
                         <p class="work_branding">Branding</p><p>
                         We craft branding systems that are visually unique, from color to typography
                         </p></li> 
                     <span class="seperator"></span>
-                    <li><div class="figure_work_design"></div>
-                        
+                    <li><div class="figure_work_design skillset_item"></div>
                         <p class="work_design">Web/UI Design</p>
                         <p>We design websites that are aesthetically pleasing and user friendly</p></li>
                     <span class="seperator"></span>
-                    <li><div class="figure_work_coding"></div>
+                    <li><div class="figure_work_coding skillset_item"></div>
                         
                         <p class="work_coding">Coding</p>
                         <p>We have a passion for clean code and always strive to keep current with the latest trends</p></li>        
@@ -200,11 +207,10 @@ Suggestion List
                 </div>
             </div>
 		</section>
-		<section id="our_work">
-			<div class="title">Our Work</div>
-		</section>
+        
+            
 		<section id="contact_us">
-			<div class="title">Get in Touch</div>
+			<div class="title"><div class="ribbon"><span>Get in touch</span></div></div>
 			<p class="form_description">We love working with smart & fun people. If you think you're one, let's meet up!</p>
 			<div class="email_form centerlized">
 				<ul class="form_content">
@@ -242,7 +248,7 @@ Suggestion List
 			</div>
 		</section>
 	</div><!-- / content -->
-	<div id="float_nav">
+	<div id="float_nav"></div> 
 		
 	</div>
 <!--FOOTER START-->
@@ -255,6 +261,8 @@ Suggestion List
                 <li id="twitter"><a href="https://twitter.com/Pandaeyesnet">Twitter</a></li>
                 <li id="google"><a href="">Google +</a></li>
                 <li id="email"><a href="">Email</a></li>
+                <li id="google"><a href="https://plus.google.com/108072811459106774048">Google +</a></li>
+                <li id="email"><a href="mailto:us@pandaeyes.net">Email Us</a></li>
             </ul>
             <br class="clearfix">
 			
@@ -359,10 +367,10 @@ $('a[href*=#]:not([href=#])').click(function() {
 				step: 1,
 				speed: 700,
 				auto: {
-					enabled: false
+					enabled: true
 				},
-				width: 780,
-				height: 240,
+				width: 960,
+				height: 400,
 				start: generatePages,
 				pageLoaded: pageLoaded
 			}
@@ -379,15 +387,6 @@ $('a[href*=#]:not([href=#])').click(function() {
 					$( this ).css( "opacity", 1.0 );
 				}
 			);
-	});
-</script>
-<script type="text/javascript">
-	$(document).ready(function()
-	{
-		$("#submit").click(function()
-		{
-			validateForm();
-		});
 	});
 </script>
 </body>
