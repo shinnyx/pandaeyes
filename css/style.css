@@ -188,7 +188,6 @@ ul.seperator li {
 } 
 br { clear: left; }
 .title {
-	background: #164b4f;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -197,6 +196,31 @@ br { clear: left; }
 	width: 40%;
 	margin: auto auto 30px auto;
 }
+			.ribbon {
+				display:inline-block;
+			}
+
+			.ribbon:after, .ribbon:before {
+				content: "";
+				float:left;
+				border:1em solid #164b4f;
+			}
+
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+
+			.ribbon span {
+				background:#164b4f;
+				line-height:2em;
+				padding:0;			
+                float:left;			    				
+                width:300px;
+			}
 .subtitle {
 	text-align: center;
 	color: #fff;
