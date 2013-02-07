@@ -363,6 +363,7 @@ span.seperator {
 
 /* BEGIN - footer */
 #footer-border {
+    background-color:#E25656;
 	background: url('../img/divider_footer.png') repeat-x;
 	height: 6px;
 	display: block;

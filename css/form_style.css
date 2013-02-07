@@ -7,7 +7,8 @@ input,textarea{
 	width:calc(50% - 5px);
 	min-width:40px;
 	height:50px;
-	font-family: 'Rockwell',Sans-Serif;
+	font-family: 'Arial',Sans-Serif;
+    font-weight:bold;
 	color: #fff;
 	border:none;
 	border-radius:7px;
@@ -18,6 +19,7 @@ input,textarea{
 	background-color: #164b4f;
 	display:inline;
 	margin-bottom:20px;
+    padding:15px;
 }
 .float_left
 {
@@ -36,7 +38,7 @@ textarea
 	display:block;
 	width:100%;
 	height:150px;
-	margin:auto;
+	margin: 10px auto;
 }
 input:before
 {
