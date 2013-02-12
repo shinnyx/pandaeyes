@@ -168,18 +168,18 @@ nav ul li {
 ul#figures_1, ul#figures_2 {
 	margin: 1%;
 	padding: 0;
-	height: 620px;
+	height: 580px;
 	width: 450px;
 	float: left;
 	display: inline-block;
 }
 ul#figures_1 li, ul#figures_2 li {
 	list-style: none;
-	margin-bottom: 15px;
+	margin-bottom:10px;
 }
 ul.seperator li {
 	background: url('../img/divider_squiggly_v.png') repeat-y;
-	height: 620px;
+	height: 580px;
 	width: 6px;
 	list-style: none;
 	float: left;
@@ -233,9 +233,9 @@ br { clear: left; }
 
 .figure_thumbnail {
 	float: left;
-	width: 158px;
-	height: 165px;
-	margin: auto 15px auto;
+	width: 181px;
+	height: 190px;
+	margin: auto 14px auto;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -260,6 +260,16 @@ br { clear: left; }
 	background: url('../img/ourstory/ourstory_tf.png');    
 }
 
+.figure_dna {
+	background: url('../img/ourstory/our_dna.png');
+    float: center;
+	width: 417px;
+	height: 69px;
+    margin:20px auto 40px 280px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .figure_caption {
 	text-align: left;
 	color: #fff;
@@ -268,12 +278,12 @@ br { clear: left; }
 }
 .figure_text {
 	text-align: left;
-	width: 200px;
+	width: 240px;
 	display: inline-block;
     color: #164b4f; 
     font-weight:bold;
-    padding-top: 10px;
     font-size:13px;
+    text-align:justify;
 }
 /* END - we_are */
 
@@ -317,7 +327,7 @@ h2 {
     font-weight:bold;
     padding-top:25px;
     font-size:16px;
-    margin-bottom:0px !important;
+    margin-bottom:10px !important;
 }
 
 #skillset li {
@@ -374,18 +384,17 @@ footer {
     text-align:center;
 }
 
-
 #social {
-    margin: 0px auto;
-    width:245px;
-    height:30px;
-    margin-bottom:70px;
+    width:310px;
+    height:100px;
+    margin:25px auto;
 }
 
 #social li a{
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    text-decoration:none;
 }
 
 #social li {
@@ -397,29 +406,29 @@ footer {
 #facebook a{
     background: url('../img/sprite_social.png') 0 0;
     display:block;  
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
 }
 
 #twitter a{
-    background: url('../img/sprite_social.png') 135px 0px;
+    background: url('../img/sprite_social.png') 180px 0px;
     display:block;  
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
 }
 
 #google a{
-    background: url('../img/sprite_social.png') 90px 0px;
+    background: url('../img/sprite_social.png') 120px 0px;
     display:block;  
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
 }
 
 #email a{
-    background: url('../img/sprite_social.png') 45px 0px;
+    background: url('../img/sprite_social.png') 60px 0px;
     display:block;  
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
 }
 
 footer .title {

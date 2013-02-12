@@ -72,17 +72,18 @@ input:before
 	font-weight: bold;
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 .validation_message
 {
 	color: #fff;
 	width: 100%;
-	margin: 10px auto 10px auto;
+	margin: 20px auto 10px auto;
 	padding-bottom: 20px;
-	font-size: 0.7em;
+	font-size: 0.9em;
 	text-align: center;
+    font-weight:bold;
 }
 /*START Add style to the section id "box"*/
 		#box
