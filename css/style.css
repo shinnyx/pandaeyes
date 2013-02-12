@@ -168,14 +168,16 @@ nav ul li {
 ul#figures_1, ul#figures_2 {
 	margin: 1%;
 	padding: 0;
-	height: 580px;
+	/*height: 580px;*/
 	width: 450px;
 	float: left;
 	display: inline-block;
+
 }
 ul#figures_1 li, ul#figures_2 li {
 	list-style: none;
-	margin-bottom:10px;
+    margin-bottom:20px;    
+
 }
 ul.seperator li {
 	background: url('../img/divider_squiggly_v.png') repeat-y;
@@ -284,6 +286,7 @@ br { clear: left; }
     font-weight:bold;
     font-size:13px;
     text-align:justify;
+    min-height:inherit;
 }
 /* END - we_are */
 
@@ -310,7 +313,7 @@ h2 {
     font-size: 2rem !important;
 }
 
-.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:20px; text-align:center;}
+.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:25px; text-align:center;}
 
 
 #skillset{
