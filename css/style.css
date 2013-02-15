@@ -8,6 +8,14 @@
  *
  */
 
+#logo {
+	background: url('../img/logo/logo_animate.gif');
+    width:162px;
+    height:98px;
+    margin:0 auto;
+    padding-bottom:5px;
+}
+
 /* font-awesome */
  .icon-caret-down:before { content: "\f0d7"; }
  
@@ -110,7 +118,7 @@ nav ul li {
 }
 .nav_divider > span { display: inline-block; }
 .nav_gt { background: url('../img/pe_imgs.png') -100px -50px; width: 23px; height:20px; }
-.nav_bd { background: url('../img/nav-bd.png'); width: 980px; height:20px; }
+.nav_bd { background: url('../img/nav-bd.png'); width: 90%; height:20px; }
 .nav_lt { background: url('../img/pe_imgs.png') -150px -50px; width: 23px; height:20px; }
 /* END - nav */
 
@@ -221,7 +229,7 @@ br { clear: left; }
 				line-height:2em;
 				padding:0;			
                 float:left;			    				
-                width:500px;
+                width:30em;
 			}
 .subtitle {
 	text-align: center;
@@ -313,7 +321,7 @@ h2 {
     font-size: 2rem !important;
 }
 
-.what_we_do_intro {color:#fff;font-weight:bold; width:700px;margin:0 auto;padding-bottom:25px; text-align:center;}
+.what_we_do_intro {color:#fff;font-weight:bold; width:90%; margin:0 auto;padding-bottom:25px; text-align:center;}
 
 
 #skillset{
@@ -390,7 +398,7 @@ footer {
 #social {
     width:310px;
     height:100px;
-    margin:25px auto;
+    margin:0 auto;
 }
 
 #social li a{
@@ -436,7 +444,6 @@ footer {
 
 footer .title {
     margin-top:20px;
-    margin-bottom:20px;
 }
 
 .copyright {
