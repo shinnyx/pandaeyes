@@ -63,6 +63,7 @@ input:before
 	font-family: 'Rockwell',Sans-Serif;
 	color: #fff;
 	text-align:center;
+    margin-bottom:10px;
 }
 .form_label_textarea
 {

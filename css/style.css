@@ -189,7 +189,7 @@ ul#figures_1 li, ul#figures_2 li {
 }
 ul.seperator li {
 	background: url('../img/divider_squiggly_v.png') repeat-y;
-	height: 580px;
+	height: 700px;
 	width: 6px;
 	list-style: none;
 	float: left;
@@ -353,7 +353,7 @@ h2 {
 
 span.seperator {
 	background: url('../img/divider_squiggly_v.png') repeat-y;
-	height: 320px;
+	height: 350px;
 	width: 6px;
 	list-style: none;
 	float: left;
