@@ -350,15 +350,22 @@ h2 {
     text-align:center;
 }
 
-
-span.seperator {
+span.skillset_seperator {
 	background: url('../img/divider_squiggly_v.png') repeat-y;
 	height: 350px;
 	width: 6px;
 	list-style: none;
 	float: left;
 	margin: 2.5%;
-	padding: 0;
+} 
+
+span.team_seperator {
+	background: url('../img/divider_squiggly_v.png') repeat-y;
+	height: 680px;
+	width: 6px;
+	list-style: none;
+	float: left;
+	margin: 2.5%;
 } 
 
 #skillset div {
@@ -452,7 +459,7 @@ footer .title {
     color:#fff;
     background: #113d40;   
     height: 35px;
-    padding: 1em 0 0 0;
+    padding: 1.5em 0 1em 0;
 }
 
 .copyright span {
