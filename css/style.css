@@ -40,7 +40,7 @@ section:first-of-type {
 }
 
 .centerlized {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 .circled-font {
@@ -203,7 +203,7 @@ br { clear: left; }
 	font-weight: bold;
 	font-family: 'Rockwell',Sans-Serif;
 	text-transform: uppercase;
-	width: 40%;
+	/*width: 40%;*/
 	margin: auto auto 30px auto;
 }
 			.ribbon {
