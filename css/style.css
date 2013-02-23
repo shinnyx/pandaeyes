@@ -118,7 +118,7 @@ nav ul li {
 }
 .nav_divider > span { display: inline-block; }
 .nav_gt { background: url('../img/pe_imgs.png') -100px -50px; width: 23px; height:20px; }
-.nav_bd { background: url('../img/nav-bd.png'); width: 90%; height:20px; }
+.nav_bd { background: url('../img/nav-bd.png'); width: 1060px; height:20px; }
 .nav_lt { background: url('../img/pe_imgs.png') -150px -50px; width: 23px; height:20px; }
 /* END - nav */
 
