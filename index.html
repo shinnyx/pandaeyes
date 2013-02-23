@@ -257,38 +257,32 @@ Suggestion List
 			<div class="title"><div class="ribbon"><span>Contact</span></div></div>
 			<p class="form_description">We love working with intelligent &#38; fun people. Think you are one? Write us &#38; give us some cool work to do!</p>
 			<div class="email_form centerlized">
+
+
+
+
+
 				<ul class="form_content">
-					<li>
-						<label class="form_label float_left">YOUR NAME*</label>
-						<label class="form_label float_right">EMAIL*</label>
+					<li class="float_left">
+						<label class="form_label">YOUR NAME*</label>
+						<input type="text" id="name" name="name" autocomplete="off"/>
 					</li>
-					<li>
-						<!--START contact form -->
-						<input type="text" id="name" name="name" class="float_left" autocomplete="off"/>
-						<input type="email" id="email" name="email" class="float_right" autocomplete="off"/>
-						<!--END contact form-->
-					</li>
-					<li>
-						<label class="form_label float_left">PHONE NUMBER</label>
-						<label class="form_label float_right">PROJECT TYPE*</label>
-					</li>
-					<li>
-						<!--START contact form -->
-						<input type="text" id="phone_no" name="phone_no" class="float_left" autocomplete="off"/>
-						<input type="text" id="project_type" name="project_type" class="float_right" autocomplete="off"/>
-						<!--END contact form-->
+					<li class="float_right">
+						<label class="form_label">EMAIL*</label>
+						<input type="email" id="email" name="email" autocomplete="off"/>
 					</li>
 					<li>
 						<label class="form_label form_label_textarea">YOUR MESSAGE*</label>
-					</li>
-					<li>
-						<!--START contact form -->
 						<textarea id="message" name="email"></textarea>
-						<!--END contact form-->
 					</li>
 					<li><p class="validation_message">All fields with a (*) are required.</p></li>
 					<li><a id="submit" href="javascript:void(0);">SEND</a></li>
 				</ul>
+
+
+
+
+
 			</div>
 		</section>
 <!-- CONTACT US ENDS -->   
@@ -335,104 +329,6 @@ g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js
 s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 -->
-<!-- toggle text change -->
-<script>
-	$(function() {
-		var toggle = $('#slidingArrow');
-		toggle.mousedown(function() {
-			$(this).parent().parent().siblings("#slidingBarContent").slideToggle('1000', function() {
-				toggle.text($(this).is(':visible') ? "▲" : "▼");
-			});
-		});
-	});
-</script>
-<!-- animated scrolling -->
-<script>
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var $target = $(this.hash), target = this.hash;
-    	var targetOffset = $target.offset().top;
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: targetOffset
-            }, 1000, function() { location.hash = target; });
-            return false;
-        }
-    }
-});
-</script>
-<!-- carousel -->
-<script type="text/javascript">
-	jQuery(function($) {
-		function generatePages() {
-			var _total, i, _link;
-			_total = $( "#carousel" ).rcarousel( "getTotalPages" );
-			
-			for ( i = 0; i < _total; i++ ) {
-				_link = $( "<a href='#'></a>" );
-				
-				$(_link)
-					.bind("click", {page: i},
-						function( event ) {
-							$( "#carousel" ).rcarousel( "goToPage", event.data.page );
-							event.preventDefault();
-						}
-					)
-					.addClass( "bullet off" )
-					.appendTo( "#pages" );
-			}
-			
-			// mark first page as active
-			$( "a:eq(0)", "#pages" )
-				.removeClass( "off" )
-				.addClass( "on" )
-				.html('<div class="bullet"><div class="dot"></div></div>');
-		}
-
-		function pageLoaded( event, data ) {
-			$( "a.on", "#pages" )
-				.removeClass( "on" )
-				.html('<div class="bullet"></div>');
-
-			$( "a", "#pages" )
-				.eq( data.page )
-				.addClass( "on" )
-				.html('<div class="bullet"><div class="dot"></div></div>');
-				
-			$("#weBuild").addClass("bounceInRight");
-		}
-		
-		$("#carousel").rcarousel(
-			{
-				visible: 1,
-				step: 1,
-				speed: 700,
-				auto: {
-					enabled: true
-				},
-				width: 960,
-				height: 400,
-				start: generatePages,
-				pageLoaded: pageLoaded
-			}
-		);
-		
-		$( "#ui-carousel-next" )
-			.add( "#ui-carousel-prev" )
-			.add( ".bullet" )
-			.hover(
-				function() {
-					$( this ).css( "opacity", 0.7 );
-				},
-				function() {
-					$( this ).css( "opacity", 1.0 );
-				}
-			);
-	});
-</script>
 <script type="text/JavaScript">
 	$(document).ready(function(){
 		$("#submit").click(function(){

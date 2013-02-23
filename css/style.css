@@ -475,3 +475,6 @@ footer .title {
     background-color:#164b4f;
 }
 /* END - footer */
+.error {
+	float: left;
+}
