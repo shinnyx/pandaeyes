@@ -40,7 +40,7 @@ function validateForm()
 
 	if(hasError == false)
 	{
-		$.post("php/sendemail.php",{emailTo:emailToVal,name:name,message:message});
+		$.post("mail.php",{emailTo:emailToVal,name:name,message:message});
 		return false;
 	}
 }
