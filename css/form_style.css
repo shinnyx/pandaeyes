@@ -48,10 +48,6 @@ input,textarea{
 	width:-moz-calc(50% - 5px);
 	width:calc(50% - 5px); 
 }
-input:after{
-	background-image:url('img/error.png');
-	margin:10px auto;
-}
 textarea
 {
 	display:block;
@@ -59,10 +55,6 @@ textarea
     width:1026px;
 	height:250px;
 	margin: 10px auto;
-}
-input:before
-{
-	outline:none;
 }
 .form_content
 {
