@@ -93,6 +93,7 @@ section:first-of-type {
 /* END - header */
 
 /* BEGIN - nav */
+#navigation { min-width: 526px; }
 nav ul li a, nav ul li{ 
 	font-family: 'Rockwell',Sans-Serif;
 	font-weight: bold;
@@ -118,7 +119,7 @@ nav ul li {
 }
 .nav_divider > span { display: inline-block; }
 .nav_gt { background: url('../img/pe_imgs.png') -100px -50px; width: 23px; height:20px; }
-.nav_bd { background: url('../img/nav-bd.png'); width: 1060px; height:20px; }
+.nav_bd { background: url('../img/nav-bd.png'); width: 90%; height:20px; }
 .nav_lt { background: url('../img/pe_imgs.png') -150px -50px; width: 23px; height:20px; }
 /* END - nav */
 
@@ -215,7 +216,7 @@ br { clear: left; }
 	font-weight: bold;
 	font-family: 'Rockwell',Sans-Serif;
 	text-transform: uppercase;
-	/*width: 40%;*/
+	min-width: 559px;
 	margin: auto auto 30px auto;
 }
 	.ribbon {
