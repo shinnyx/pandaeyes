@@ -18,16 +18,19 @@ input,textarea{
 	background-color: #164b4f;
 /*	display:inline;
 	margin-bottom:20px;*/
-    padding:15px;
+    padding: 15px;
 }
+#name, #email { text-align: center; }
 .input { 
 	width:-webkit-calc(50% - 5px);
 	width:-o-calc(50% - 5px);
 	width:-moz-calc(50% - 5px);
 	width:calc(50% - 5px); 
 }
-.form_content li { 
+.form_content li:not(:last-child){ /* exclude the submit button */ 
 	margin-bottom:20px;
+	position: relative;
+	display: table;
 }
 .float_left
 {

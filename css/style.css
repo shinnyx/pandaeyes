@@ -476,5 +476,9 @@ footer .title {
 }
 /* END - footer */
 .error {
-	float: left;
+	left: 0;
+	margin: 15px;
+	position: absolute;
+	z-index: 1;
+	top: 30px;
 }
