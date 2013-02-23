@@ -1,12 +1,12 @@
 <!-- toggle text change -->
-$(function() {
-	var toggle = $('#slidingArrow');
-	toggle.mousedown(function() {
-		$(this).parent().parent().siblings("#slidingBarContent").slideToggle('1000', function() {
-			toggle.text($(this).is(':visible') ? "▲" : "▼");
-		});
-	});
-});
+// $(function() {
+// 	var toggle = $('#slidingArrow');
+// 	toggle.mousedown(function() {
+// 		$(this).parent().parent().siblings("#slidingBarContent").slideToggle('1000', function() {
+// 			toggle.text($(this).is(':visible') ? "▲" : "▼");
+// 		});
+// 	});
+// });
 
 <!-- carousel -->
 jQuery(function($) {
