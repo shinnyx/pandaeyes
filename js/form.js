@@ -4,7 +4,7 @@ $(document).ready(function() {
 			$(this).siblings(".error").remove();
 		});
 	});
-})
+});
 
 function validateForm()
 {
@@ -40,7 +40,7 @@ function validateForm()
 
 	if(hasError == false)
 	{
-		$.post("./mail.php",{emailTo:emailToVal,name:name,message:message});
+		$.post("./mail.php",{email:emailToVal,name:name,message:message});
 		return false;
 	}
 }
