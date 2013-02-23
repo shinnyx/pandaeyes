@@ -250,39 +250,31 @@ Suggestion List
                 </div>
             </div>
 		</section>
-<!-- OUR SKILLSET ENDS -->                   
+<!-- OUR SKILLSET ENDS -->
         
-<!-- CONTACT US STARTS -->                       
+<!-- CONTACT US STARTS -->
 		<section id="contact_us">
 			<div class="title"><div class="ribbon"><span>Contact</span></div></div>
 			<p class="form_description">We love working with intelligent &#38; fun people. Think you are one? Write us &#38; give us some cool work to do!</p>
 			<div class="email_form centerlized">
-
-
-
-
-
-				<ul class="form_content">
-					<li class="float_left">
-						<label class="form_label">YOUR NAME*</label>
-						<input type="text" id="name" name="name" autocomplete="off"/>
-					</li>
-					<li class="float_right">
-						<label class="form_label">EMAIL*</label>
-						<input type="email" id="email" name="email" autocomplete="off"/>
-					</li>
-					<li>
-						<label class="form_label form_label_textarea">YOUR MESSAGE*</label>
-						<textarea id="message" name="email"></textarea>
-					</li>
-					<li><p class="validation_message">All fields with a (*) are required.</p></li>
-					<li><a id="submit" href="javascript:void(0);">SEND</a></li>
-				</ul>
-
-
-
-
-
+				<form name="contact_form" method="post" action="mail.php">
+					<ul class="form_content">
+						<li class="float_left">
+							<label class="form_label">YOUR NAME*</label>
+							<input type="text" id="name" name="name" autocomplete="off"/>
+						</li>
+						<li class="float_right">
+							<label class="form_label">EMAIL*</label>
+							<input type="email" id="email" name="email" autocomplete="off"/>
+						</li>
+						<li>
+							<label class="form_label form_label_textarea">YOUR MESSAGE*</label>
+							<textarea id="message" name="email"></textarea>
+						</li>
+						<li><p class="validation_message">All fields with a (*) are required.</p></li>
+						<li><a id="submit" href="javascript:void(0);">SEND</a></li>
+					</ul>
+				</form>
 			</div>
 		</section>
 <!-- CONTACT US ENDS -->   
