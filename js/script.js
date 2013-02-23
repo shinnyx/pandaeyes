@@ -1,4 +1,4 @@
-<!-- toggle text change -->
+// toggle text change
 // $(function() {
 // 	var toggle = $('#slidingArrow');
 // 	toggle.mousedown(function() {
@@ -8,7 +8,7 @@
 // 	});
 // });
 
-<!-- carousel -->
+// carousel
 jQuery(function($) {
 	function generatePages() {
 		var _total, i, _link;
@@ -76,7 +76,7 @@ jQuery(function($) {
 		);
 });
 
-<!-- animated scrolling -->
+// animated scrolling
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
