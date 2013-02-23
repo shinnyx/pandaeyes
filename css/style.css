@@ -144,11 +144,23 @@ nav ul li {
 	z-index: 1000;
 	opacity: 1;
 	top: 40%;
+        	box-shadow:0px 4px rgba(0,0,0,0.3);
+    	-webkit-box-shadow: 0px 4px rgba(0,0,0,0.3);
+    	-moz-box-shadow:0px 9px 0px rgba(0,0,0,0.5), 0px 9pxrgba(0,0,0,0.5);
+    	-o-box-shadow:0px 9px 0px rgba(0,0,0,0.5), 0px 9px rgba(0,0,0,0.5);
 }
 #ui-carousel-next {
 	background-position: -50px 0px;
 	right: 0;
 }
+#ui-carousel-next:active, #ui-carousel-prev:active {
+ box-shadow:0px 0px rgba(0,0,0,0.3);
+    	-webkit-box-shadow: 0px 0px rgba(0,0,0,0.3);
+    	-moz-box-shadow:0px 0px 0px rgba(0,0,0,0.5), 0px 9pxrgba(0,0,0,0.5);
+    	-o-box-shadow:0px 0px 0px rgba(0,0,0,0.5), 0px 9px rgba(0,0,0,0.5);   
+    top:42%;
+} 
+
 #pages a{ display: inline-block; margin:10px 5px; }
 .bullet {
 	border-radius: 50%;
