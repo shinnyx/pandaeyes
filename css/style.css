@@ -66,6 +66,7 @@ section:first-of-type {
 	top: 40%;
     margin:0 auto;
     padding: 10px 0;
+    z-index: 999;
 }
 #float_nav li { list-style: none; }
 #float_nav a {
