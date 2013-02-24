@@ -195,6 +195,14 @@ nav ul li {
 /* END - carousel */
 
 /* BEGIN - we_are */
+
+#ourstory_function {
+	background: url('../img/ourstory/ourstory_function.png');
+    width:895px;
+    height:156px;
+    margin:30px auto;
+}
+
 .figure_group {
 	width: 996px;
 }
