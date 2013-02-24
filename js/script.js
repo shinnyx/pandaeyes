@@ -92,3 +92,31 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+//Hightlight float_nav's bullet on relavent section
+$(function(){
+    var sections = {},
+        _height = $(window).height(),
+        i = 0;
+
+    // Grab positions of our sections
+    $('section').each(function(){
+        sections[this.id] = $(this).offset().top;
+    });
+
+    $(document).scroll(function(){
+        var $this   = $(this),
+            pos     = $this.scrollTop();
+            //$parent = {};
+
+        for(i in sections){
+            //$parent = $('[name="' + i + '"]').parent();
+            //you now have a reference to a jQuery object that is the parent of this section
+
+            if(sections[i] > pos && sections[i] < pos + _height){
+                $('#float_nav a').removeClass('active');
+                $('#float_nav' + i).addClass('active');
+            }  
+        }
+    });
+});

@@ -59,13 +59,24 @@ section:first-of-type {
 /* BEGIN - float nav */
 #float_nav {
 	position: fixed;
-    background-color:#164b4f;
+    background-color:rgba(198,72,72,0.4);
 	width: 30px;
 	height: 200px;
 	right: 0;
 	top: 40%;
     margin:0 auto;
+    padding: 10px 0;
 }
+#float_nav a {
+	display: inline-block;
+	width: 30px;
+	height: 28px;
+	font-size: 1.5em;
+	text-align: center;
+	color: #fff;
+}
+#float_nav a:hover { color: #164B4F; }
+#float_nav a .active { color: #164B4F; }
 /* END - float nav */
 
 /* BEGIN - header */
