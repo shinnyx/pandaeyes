@@ -100,6 +100,14 @@ font-weight: bold;
 	text-align: center;
     font-weight:bold;
 }
+.send_icon { 
+	background: url(../img/pe_imgs.png) -200px -45px;
+	width: 25px;
+	height: 19px;
+	margin: -10px 10px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
 /*START Add style to the section id "box"*/
 		#box
 		{
