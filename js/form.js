@@ -40,7 +40,10 @@ function validateForm()
 
 	if(hasError == false)
 	{
-		$.post("./mail.php",{email:emailToVal,name:name,message:message});
+		var submit = $.post("./mail.php",{email:emailToVal,name:name,message:message});
+		submit.done(function() {
+			$('#submit_text').html("THANKS!");
+		});
 		return false;
 	}
 }
