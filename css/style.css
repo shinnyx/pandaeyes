@@ -59,14 +59,14 @@ section:first-of-type {
 /* BEGIN - float nav */
 #float_nav {
 	position: fixed;
-    background-color:rgba(255,255,230,0.1);
+  background-color:rgba(255,255,230,0.1);
 	width: 30px;
-	height: 200px;
+	height: 250px;
 	right: 0;
-	top: 40%;
-    margin:0 auto;
-    padding: 10px 0;
-    z-index: 999;
+	top: 20%;
+  margin:0 auto;
+  padding: 10px 0;
+  z-index: 999;
 }
 #float_nav li { list-style: none; }
 #float_nav a {
@@ -80,6 +80,13 @@ section:first-of-type {
 #float_nav a:hover { color: #164B4F; }
 #float_nav li.active a { color: #164B4F; }
 /* END - float nav */
+#float_nav .social { height: 30px; }
+#float_nav .social a { height: 30px; }
+.float_social { background: url('../img/sprite_social_30x30.png'); }
+.fb_social { background-position: 0; }
+.twitter_social { background-position: -31px 0; }
+.gplus_social { background-position: -62px 0; }
+.email_social { background-position: -91px 0; }
 
 /* BEGIN - header */
 #hello { 
