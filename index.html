@@ -1,365 +1,94 @@
-﻿<!doctype html>
+---
+layout: home
+---
 
-<!-- 
-320 and Up by Andy Clarke
-Version: 3.0
-URL: http://stuffandnonsense.co.uk/projects/320andup/
-Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0 test
--->
 
-<!--
-Suggestion List
------------
-1. Use negative margin instead of display:none on slider
-1. Custom scrollbar
--->
 
-<!-- HTML5 Boilerplate -->
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+        <img src="{{ site.baseurl }}/assets/img/bootstrap-stack.png" alt="" class="img-fluid mb-3 mb-md-0">
+      </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
+        <p class="lead">
+          Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+        </p>
+        <p class="lead mb-4">
+          Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+        </p>
+        <div class="d-flex flex-column flex-md-row lead mb-3">
+          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/" class="btn btn-lg btn-bd-purple mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
+          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
+        </div>
+        <p class="text-muted mb-0">
+          Currently v{{ site.current_version }}
+        </p>
+      </div>
+    </div>
+    {% include ads.html %}
+  </div>
+</main>
 
-<head>
-<meta charset="utf-8">
+<div class="masthead-followup row m-0 border border-white">
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    <svg class="text-primary mb-2" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M28 22 L28 30 4 30 4 22 M16 4 L16 24 M8 16 L16 24 24 16" />
+    </svg>
+    <h3>Installation</h3>
+    <p>Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed installs don't include documentation, but do include our build system and readme.</p>
 
-<title>Pandaeyes</title>
+{% highlight sh %}
+npm install bootstrap@{{ site.current_version }}
+{% endhighlight %}
 
-<link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_18e89899766a_16.png">
+{% highlight sh %}
+gem install bootstrap -v 4.0.0.alpha6
+{% endhighlight %}
 
-<meta name="description" content="We believe in marrying fun and function to create engaging and informative web experiences.">
-<meta name="author" content="pandaeyes.net">
+{% highlight sh %}
+bower install bootstrap#v{{ site.current_version }}
+{% endhighlight %}
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download">Read installation docs</a>
+  </div>
 
-<!-- http://t.co/dKP3o1e -->
-<!-- <meta name="HandheldFriendly" content="True"> -->
-<!-- <meta name="MobileOptimized" content="320"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    <svg class="text-primary mb-2" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+    </svg>
+    <h3>Bootstrap CDN</h3>
+    <p>When you only need to include Bootstrap's compiled CSS or JS, you can use the Bootstrap CDN.</p>
 
-<!-- For all browsers -->
-<link type="text/css" rel="stylesheet" href="css/320andup.css">
-<link type="text/css" rel="stylesheet" href="css/style.css">
-<link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
-<link type="text/css" rel="stylesheet" href="css/form_style.css"/>
-<!--[if (lt IE 9) & (!IEMobile)]>
-<script src="js/selectivizr-min.js"></script>
-<![endif]--> 
+<h5>CSS only</h5>
+{% highlight html %}
+<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+{% endhighlight %}
 
-<!-- JavaScript -->
-<script src="js/modernizr-2.5.3-min.js"></script>
-<!-- For iPhone 4 -->
-<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"> -->
-<!-- For iPad 1-->
-<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"> -->
-<!-- For the new iPad -->
-<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/h/apple-touch-icon-144x144-precomposed.png"> -->
-<!-- For iPhone 3G, iPod Touch and Android -->
-<!-- <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"> -->
-<!-- For Nokia -->
-<!-- <link rel="shortcut icon" href="img/l/apple-touch-icon.png"> -->
-<!-- For everything else -->
-<link rel="shortcut icon" href="/favicon.ico">
+<h5>JS, Popper, and jQuery</h5>
+{% highlight html %}
+<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+<script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
+<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+{% endhighlight %}
+    <hr class="half-rule">
+    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
+  </div>
 
-<!--iOS -->
-<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
-<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
-<!-- <link rel="apple-touch-startup-image" href="img/splash.png"> -->
-
-<!-- <script>(function(){var p,l,r=window.devicePixelRatio;if(navigator.platform==="iPad"){p=r===2?"img/startup/startup-tablet-portrait-retina.png":"img/startup/startup-tablet-portrait.png";l=r===2?"img/startup/startup-tablet-landscape-retina.png":"img/startup/startup-tablet-landscape.png";document.write('<link rel="apple-touch-startup-image" href="'+l+'" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="'+p+'" media="screen and (orientation: portrait)"/>');}else{p=r===2?"img/startup/startup-retina.png":"img/startup/startup.png";document.write('<link rel="apple-touch-startup-image" href="'+p+'"/>');}})()</script> -->
-<!--Microsoft -->
-
-<!-- Prevents links from opening in mobile Safari -->
-<!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
-<meta http-equiv="cleartype" content="on">
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39787190-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-
-<body class="clearfix">
-	<ul id="float_nav">
-			<li class="active"><a id="float_nav_hello" href="#hello" title="Hello" alt="Hello">&#9679;</a></li>
-			<li><a id="float_nav_who_we_are" href="#who_we_are" title="Our Story" alt="Our story">&#9679;</a></li>
-			<li><a id="float_nav_the_team" href="#the_team" title="The Team" alt="The Team">&#9679;</a></li>
-			<li><a id="float_nav_our_skillset" href="#our_skillset" title="Our Skillset" alt="Our SkillSet">&#9679;</a></li>
-			<li><a id="float_nav_contact_us" href="#contact_us" title="Contact Us" alt="Contact Us">&#9679;</a></li>
-			<li class="social"><a class="fb_social float_social" href="http://www.facebook.com/pandaeyes.net" title="Like us on Facebook!" target="_blank"></a></li>
-			<li class="social"><a class="twitter_social float_social" href="https://twitter.com/Pandaeyesnet" title="Follow us on Twitter!" target="_blank"></a></li>
-			<li class="social"><a class="gplus_social float_social" href="https://plus.google.com/108072811459106774048" title="+1 on Google Plus" target="_blank"></a></li>
-			<li class="social"><a class="email_social float_social" href="mailto:us@pandaeyes.net" title="Drop us an Email!"></a></li>
-		</ul>
-	<div class="content clearfix">
-		<section id="hello">
-			<header role="banner" class="clearfix centerlized">
-                <div id="slidingBarContent">
-					<h6 style="color:#FFF">>>>>>>>>>>>>  Welcome to our brand spanking <i>new</i> site!   >>>>>>>>>>>></h6>
-				</div>
-				<div class="reset" id="slidingBar">
-                    <!--Temporary Fix-->
-					<!--<a href="#" class="pull-right"><span id="slidingArrow">&#x25BC;</span></a>-->
-				</div>
-                    <!--DELETE THIS AFTER FIX-->
-                    <div style="height:10px;"></div>
-			</header>
-			<!-- Logo -->
-            <div id="logo"></div>
-			<!-- Navigation -->
-			<div id="navigation">
-				<div class="nav_divider centerlized">
-					<span class="nav_gt"></span><span class="nav_bd"></span><span class="nav_lt"></span>
-				</div>
-				<nav class="centerlized">
-					<ul>
-						<li><a href="#hello"><span>&diams; </span>Hello</a></li>
-				    	<li><a href="#who_we_are"><span>&diams; </span>Our Story</a></li>
-				    	<li><a href="#the_team"><span>&diams; </span>The Team</a></li>
-						<li><a href="#our_skillset"><span>&diams; </span>Our Skillset</a></li>
-						<!--<li><a href="#work"><span>&diams; </span>Work</a></li>-->
-						<li><a href="http://blog.pandaeyes.net" target="_blank"><span>&diams; </span>Blog</a></li>
-						<li><a href="#contact_us"><span>&diams;</span>Contact &nbsp;&nbsp;&nbsp;&nbsp;&diams;</a></li>
-					</ul>
-				</nav>
-				<div class="nav_divider centerlized">
-				<span class="nav_gt"></span><span class="nav_bd"></span><span class="nav_lt"></span>
-			</div>
-			</div>
-			<!-- Carousel -->
-			<div id="carousel_slider" class="centerlized">
-				<a href="#" id="ui-carousel-prev"></a>
-
-				<div id="carousel">
-					<div class="slide">
-						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_01.png" />
-					</div>
- 					<div class="slide">
-						<img alt="We build websites" class="slider_img" title="We Build Websites." src="img/slider_02.png" />
-					</div>
-				</div>
-				<a href="#" id="ui-carousel-next"></a>
-				<div id="pages" class="centerlized" style="height:20px;"></div>
-			</div>
-		</section>
-
-<!-- OUR STORY START -->        
-		<section id="who_we_are">
-			<!-- Figures -->
-			<div class="title"><div class="ribbon"><span>Our Story</span></div></div>
-            
-			<div class="figure_group centerlized">
-                
-            <p class="what_we_do_intro">
-                
-                Hi! We're Pandaeyes, 5 good guys who like to help people craft great web experiences.
-                Our name is a metaphor for the lengths we go to to achieve digital greatness.
-                Our work revolves around solving life's challenges through creating a medley of fun &#38; function.
-  
-                <!--
-                We believe design is the key to success, so we focus on execution and the important little details.
-                We work closely with our clients to design more attractive, thought-provoking, and enjoyable websites, 
-                services and online products. Design is not just what it looks like. Design is how it works. We take products and services, 
-                and craft them together with relevant ideas and solutions to create exciting products as well as a magical user experience.
-                -->           
-                
-            </p>   
-                
-                <div id="ourstory_function"></div>                
-                
-			</div>           
-		</section>
-<!-- OUR STORY ENDS -->          
-        
-<!-- THE TEAM START -->        
-		<section id="the_team">
-			<!-- Figures -->
-			<div class="title"><div class="ribbon"><span>The Team</span></div></div>
-            
-			<div class="figure_group centerlized">
-                
-            <p class="what_we_do_intro">
-                Here are the 5 brains who make up the team.
-                We are designers who code, and techies who care about UX experiences.
-                We have one common goal - building great web experiences.
-                
-            </p>                
-				<ul id="figures_1">
-					<li>
-						<div class="figure_thumbnail" id="kitmeng"></div>
-						<span class="figure_caption">Kit Meng<p>&#60;Designer&#62;</p></span>
-						<p class="figure_text">
-                            Kit Meng is a 22 year old Junior Art Director from Malaysia. He has a diploma in Creative Multimedia and 2+ years of work experience locally.
-                            Most of his work involves digital media, but he has interest in branding and illustration as well.
-					</li>
-					<li>                        
-						<div class="figure_thumbnail" id="shinn"></div>
-						<span class="figure_caption">Shinn<p>&#60;Web Developer&#62;</p></span>
-						<p class="figure_text">
-                            The 3rd member to join our team, Shinn is a core contributor in all of our projects.
-                            He's in an strong commited relationship with Ruby (on Rails).                        
-						</p>
-					</li>
-                    <br>
-					<li>
-						<div class="figure_thumbnail" id="sking"></div>
-						<span class="figure_caption">Stephen<p>&#60;Web Developer&#62;</p></span>
-						<p class="figure_text">
-                            An A to Z of likes.
-                            Arsenal, bass, C#, documentaries, ergonomics, feral cats, Gran Turismo, HTML, Indian spinners, jQuery, K-pop, Lenovo, Modern Warfare,
-                            Nirvana, Opera Mini, performance, Queen, RWD, scuba, tea, unicorns, vodka, Windows, xanthophyll, yachts, zinnober.
-						</p>
-					</li>
-				</ul>
-                
-                    <span class="team_seperator"></span>
-                
-				<ul id="figures_2">
-					<li>
-						<div class="figure_thumbnail" id="cschong"></div>
-						<span class="figure_caption">CS<p>&#60;Designer&#62;</p></span>
-						<p class="figure_text">
-                            This is CS, a true ad man. Don't be fooled by his thick rimmed glasses, he never fails to come up with great ideas everytime.
-                            Memorable quote - "The more things you see, the more you learn."
-						</p>
-					</li>
-                    <br>
-					<li>
-						<div class="figure_thumbnail" id="tfeng"></div>
-						<span class="figure_caption">Ting Feng<p>&#60;Mobile Developer&#62;</p></span>
-						<p class="figure_text">
-                            A graduate of APPIT's degree program, he lives and codes in Balakong. We have strong evidence to believe that he is half-human, half-android.
-						</p>
-					</li>                 
-				</ul>
-				<br />
-			</div>           
-		</section>
-<!-- THE TEAM ENDS -->    
-        
-        
-<!-- OUR SKILLSET STARTS -->           
-        <section id="our_skillset">
-			<!-- portfolio -->
-            <div class="title"><div class="ribbon"><span>Our Skillset</span></div></div>
-            <div class="figure_group centerlized">
-                			
-            <p class="what_we_do_intro">
-                
-                Here's how we execute every project. Allow us to guide you through our design &#38; development process.
-                
-            </p>
-                <ul id="skillset">
-                    <li><div class="figure_work_branding skillset_item"></div>
-                        <p class="work_branding">Branding</p><p>                        
-                        A strong visual identity is crucial in improving a brand's reputation.
-                        We craft visually unique branding systems to get the right people interested.
-                        </p></li> 
-                    <span class="skillset_seperator"></span>
-                    <li><div class="figure_work_design skillset_item"></div>
-                        <p class="work_design">Web/UI Design</p>
-                        <p>We make pixels work together to craft future-ready, aesthetically pleasing and user friendly websites.</p></li>
-                    <span class="skillset_seperator"></span>
-                    <li><div class="figure_work_coding skillset_item"></div>
-                        
-                        <p class="work_coding">Coding</p>
-                        <p>We are obsessed with clean code and will always strive to keep up with latest trends and techniques.</p></li>        
-                </ul>
-                <div class="clearfix">
-                    
-                </div>
-            </div>
-		</section>
-<!-- OUR SKILLSET ENDS -->
-        
-<!-- CONTACT US STARTS -->
-		<section id="contact_us">
-			<div class="title"><div class="ribbon"><span>Contact</span></div></div>
-			<p class="form_description">We love working with intelligent &#38; fun people. Think you are one? Write us &#38; give us some cool work to do!</p>
-			<div class="email_form centerlized">
-				<form name="contact_form" method="post" action="mail.php">
-					<ul class="form_content">
-						<li class="float_left">
-							<label for="name" class="form_label">YOUR NAME*</label>
-							<input type="text" id="name" name="name" autocomplete="off"/>
-						</li>
-						<li class="float_right">
-							<label for="email" class="form_label">EMAIL*</label>
-							<input type="email" id="email" name="email" autocomplete="off"/>
-						</li>
-						<li>
-							<label for="message" class="form_label form_label_textarea">YOUR MESSAGE*</label>
-							<textarea id="message" name="message" placeholder="Write us for any project. We'd love to work with you!"></textarea>
-						</li>
-						<li><p class="validation_message">All fields with a (*) are required.</p></li>
-						<li><a id="submit" href="javascript:void(0);"><span class="send_icon"></span><span id="submit_text">SEND</span></a></li>
-					</ul>
-				</form>
-			</div>
-		</section>
-<!-- CONTACT US ENDS -->   
-    
-	</div><!-- / content -->
-		
-
-<!--FOOTER START-->
-	<div id="footer-border"></div>
-	<footer role="contentinfo">
-		<div class="centerlized clearfix">
-            <div class="title">Elsewhere on the web</div>
-            <ul id="social">
-                <li id="facebook"><a href="http://www.facebook.com/pandaeyes.net" title="Like us on Facebook!" target="_blank">Facebook</a></li>
-                <li id="twitter"><a href="https://twitter.com/Pandaeyesnet" title="Follow us on Twitter!" target="_blank">Twitter</a></li>
-                <li id="google"><a href="https://plus.google.com/108072811459106774048" title="+1 on Google Plus" target="_blank">Google Plus</a></li>
-                <li id="email"><a href="mailto:us@pandaeyes.net" title="Drop us an Email!">Email Us</a></li>
-            </ul>
-            <br class="clearfix">
-			
-		</div>
-        <p class="copyright"><!--<span class="white_line"></span>--><span>&copy; 2013 Pandaeyes</span><!--<span class="white_line"></span>--></p> 
-	</footer>
-<!--FOOTER END-->
-
-<!--
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
--->
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
-<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
-<script type="text/javascript" src="js/jquery.ui.rcarousel.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/helper.js"></script>
-<script type="text/javascript" src="js/form.js"></script>
-<script src="js/script.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script>
-<!-- Google Analytics
-<script>
-var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-s.parentNode.insertBefore(g,s)}(document,"script"));
-</script>
--->
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#submit").click(function(e){
-			e.preventDefault();
-			validateForm();
-		});
-		$.localScroll();
-		$('#float_nav').onePageNav({
-			currentClass: 'active',
-			filter: ':not(.float_social)'
-		});
-	});
-</script>
-</body>
-</html>
+  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
+    <svg class="text-primary mb-2" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z" />
+    </svg>
+    <h3>Official Themes</h3>
+    <p>
+      Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+    </p>
+    <img class="img-fluid mt-3 mx-auto" src="{{ site.baseurl }}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="1024" height="388">
+    <hr class="half-rule">
+    <a href="{{ site.themes }}" class="btn btn-outline-primary">Browse themes</a>
+  </div>
+</div>
